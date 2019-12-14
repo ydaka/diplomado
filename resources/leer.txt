@@ -1,0 +1,29 @@
+-Instalar libreria y activar para adicionar la autentificacion(Hacer copia de views/Layouts/app.blade.php)
+{composer require laravel/ui --dev}
+{php artisan ui vue --auth}
+---------------------------------
+-Se descargo e instalo node para windows
+{npm remove bootstrap} & {npm add bootstrap --dev} -Permite agregar el ultimo bootstrap
+{npm install}
+-Cuando se generen cambios en resources/js o resources/sass ejecutar {npm run dev} para compilar
+---------------------------------
+{npm install --save-dev @fortawesome/fontawesome-free} -Instala algo para los iconos
+**********************************************
+resources/sass/app.scss
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+$fa-font-path: "../webfonts";//Ruta de modulos de node
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";//Ruta de modulos de node
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";//Ruta de modulos de node
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";//Ruta de modulos de node
+************************************************
+{npm run dev}
+----------------------------------------
+{php artisan make:controller api/ComunaController --api} contolador para api accede de otra pp o una peticion ajax.
